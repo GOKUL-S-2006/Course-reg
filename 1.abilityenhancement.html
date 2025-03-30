@@ -1,0 +1,108 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ability Enhancement</title>
+    <style>
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        body {
+            font-family: 'Cactus Classical Serif', serif;
+            background: linear-gradient(270deg, #eae7e5, #bdb2ab, #d9ded9, #b9c6c0, #e0d1d1);
+            background-size: 1000% 1000%;
+            animation: gradientAnimation 10s ease infinite;
+            color: #070707;
+        }
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #4a5c49;
+        }
+        .top-bar button {
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-family: 'Cactus Classical Serif', serif;
+            color: white;
+        }
+        .home-btn {
+            background-color: #819b8e;
+        }
+        .view-modify-btn {
+            background-color: #bdb2ab;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            font-family: 'Cactus Classical Serif', serif;
+        }
+        .register-btn {
+            background-color: #4a5c49;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .back-btn {
+            margin-top: 15px;
+            padding: 5px;
+            background-color: #819b8e;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 30px;
+            border-radius: 5vh;
+        }
+    </style>
+    <script>
+        var ho = document.getElementsByClassName("back-btn");
+        function go_to_home()
+        {
+            window.location.href = "register_sem1.html";
+        }
+        function go_to_home1()
+        {
+            window.location.href = "home_2.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="top-bar">
+        <button onclick="go_to_home1()" class="home-btn">Home</button>
+        <button class="view-modify-btn">View/Modify</button>
+    </div><h2>Course Registration - Ability Enhancement</h2>
+<table>
+    <tr style="background-color: rgb(249, 250, 249);">
+        <th>S.No</th>
+        <th>Course Code</th>
+        <th>Title</th>
+        <th>Type</th>
+        <th>Credit</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>UENG101L</td>
+        <td>Effective English Communication</td>
+        <td>TH</td>
+        <td>2.0</td>
+        <td><button class="register-btn" onclick="window.location.href = '1_abienhan_effengcom_th.html'">Register</button></td>
+    </tr>
+</table>
+<center>
+<button   onclick="go_to_home()"  class="back-btn"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 24 24" width="30px" fill="#BB271A"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M7 8V5l-7 7 7 7v-3l-4-4 4-4zm6 1V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"/></svg>Back</button>
+</center>
+</body>
+</html>
